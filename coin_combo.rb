@@ -20,13 +20,12 @@ class Coin_Combo
     output_array = []
     remainder = self.user_input
     while (index < coin_types_array.length)
-      puts "INDEX : #{index}"
-      puts "NEW LOOP REMAINDER: #{remainder}"
+      #puts "INDEX : #{index}"
+      #puts "NEW LOOP REMAINDER: #{remainder}"
       output_array.push(remainder / coin_types_array[index])
-      puts "OUTPUT ARRAY: #{output_array}"
+      #puts "OUTPUT ARRAY: #{output_array}"
       remainder = remainder % coin_types_array[index]
-      puts "NEW REMAINDER: #{remainder}"
-      #
+      #puts "NEW REMAINDER: #{remainder}"
       index = index + 1
 
       if index > 10
